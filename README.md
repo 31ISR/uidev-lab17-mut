@@ -55,6 +55,8 @@ function updateClock() {
 ### Изменение прогресса круга
 
 ```JavaScript
+const circumference = 2 * Math.PI * 52
+
 function updateCircleProgress(circle, value, max) {
     const progress = (value / max) * circumference
     circle.style.strokeDasharray = `${progress} ${circumference}`
